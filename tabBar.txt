@@ -1,0 +1,31 @@
+    "tabBar": {
+        "color": "#b8b8b8",
+        "selectedColor": "#F56B69",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/indexModule/index/index",
+                "text": "首页",
+                "iconPath": "./images/bar1_.png",
+                "selectedIconPath": "./images/bar1.png"
+            },
+            {
+                "pagePath": "pages/category/category/category",
+                "text": "分类",
+                "iconPath": "./images/bar2_.png",
+                "selectedIconPath": "./images/bar2.png"
+            },
+            {
+                "pagePath": "pages/bookShelf/bookShelf/bookShelf",
+                "text": "购物车",
+                "iconPath": "./images/bar3_.png",
+                "selectedIconPath": "./images/bar3.png"
+            },
+            {
+                "pagePath": "pages/personalModule/personal/personal",
+                "text": "个人中心",
+                "iconPath": "./images/bar5_.png",
+                "selectedIconPath": "./images/bar5.png"
+            }
+        ]
+    },

@@ -1,0 +1,107 @@
+$red: #e52e2e;
+$green: #15d265;
+$blue: #4090ff;
+$gray: #9C9B9B;
+$bg-gray: #f8f8f8;
+$bdr1: 5px;
+$fs1: 13px;
+
+.analysis-container {
+  min-height: calc(100vh - 85px);
+  padding: 15px;
+  background: #f7f6fb;
+  font-size: $fs1;
+}
+.floor {
+  margin-bottom: 15px;
+  background: #fff;
+  &-head {
+    height: 48px;
+    line-height: 48px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+    color: $blue;
+    font-size: 16px;
+  }
+  &-body {
+    padding: 20px 25px;
+  }
+}
+
+/* 弹出框 */
+.popover-box {
+  display: flex;
+  align-items: center;
+  .popover-title {
+    height: 14px;
+    line-height: 15px;
+    margin-right: 5px;
+  }
+  .popover-icon {
+    display: block;
+    font-style: normal;
+    &::after {
+      content: "?";
+      display: block;
+      width: 16px;
+      height: 16px;
+      line-height: 14px;
+      border: 1px solid #505050;
+      border-radius: 50%;
+      color: #505050;
+      font-size: 12px;
+      text-align: center;
+      transform: scale(0.8);
+
+    }
+  }
+}
+
+/* 选择时间 */
+.date-box {
+  display: flex;
+  align-items: center;
+  .el-select {
+    width: 100px;
+    margin-right: 10px;
+  }
+}
+/* 涨幅 */
+.amount-increase {
+  font-size: 12px;
+  &-item {
+    display: flex;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &-title,
+  &-num {
+    color: $gray;
+  }
+  &-icon {
+    margin: 0 5px;
+    font-weight: bold;
+    &.el-icon-top {
+      color: $red;
+    }
+    &.el-icon-bottom {
+      color: $green;
+    }
+    &.equal {
+      position: relative;
+      width: 12px;
+      height: 12px;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 6px;
+        height: 2px;
+        background: #333;
+      }
+    }
+  }
+}
